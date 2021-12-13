@@ -2,3 +2,6 @@
 
 let anchorElement = document.getElementById("external-link");
 anchorElement.href = "https://google.com";
+
+anchorElement = document.querySelector("#external-id"); // can select elements in different ways (element tag, classes, or id)
+anchorElement.href = "https://academind.com";
