@@ -14,7 +14,11 @@
   <!-- <script src="remove-elements.js" defer></script> -->
   <!-- <script src="move-elements.js" defer></script> -->
   <!-- <script src="inner-html.js" defer></script> -->
-  <script src="event-listener.js" defer></script>
+  <!-- <script src="event-listener.js" defer></script> -->
+  <script src="demo.js" defer></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="demo.css">
 </head>
 
 <body>
@@ -23,8 +27,19 @@
   <p class="paragraph
   ">This is a <a href="#" id="external-link">link</a> </p> -->
 
-  <p>Click me!</p>
-  <input type="text">
+  <!-- <p>Click me!</p>
+  <input type="text"> -->
+
+  <form action="">
+    <div class="control">
+      <label for="product-name">Product Name</label>
+      <input type="text" id="product-name" class="" name="product-name" maxlength="60">
+      <span id="charcount">
+        <span id="remaining-chars">60</span>/60
+      </span>
+    </div>
+    <button>Submit</button>
+  </form>
 
 
 
