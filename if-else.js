@@ -1,5 +1,5 @@
 const myName = "Jerk";
 
-if () {
+if (myName === "Jerk") {
   console.log("Hello");
 }
