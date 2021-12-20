@@ -35,3 +35,29 @@ function highlightLinks() {
 }
 
 highlightLinksButtonElement.addEventListener("click", highlightLinks);
+
+// Display user data
+
+const dummyUserData = {
+  firstName: "Jerika",
+  lastName: "Kanz",
+  age: 18,
+};
+
+const displayUserDataButtonElement =
+  document.querySelector("#user-data button");
+
+function displayUserData() {
+  const outputDataElement = document.getElementById("output-user-data");
+
+  outputDataElement.innerHTML = "";
+
+  for (const key in dummyUserData) {
+    const newUserDataListElement = document.createElement("li");
+    const outputText = key.toUpperCase() + ": " + dummyUserData[key];
+    newUserDataListElement.textContent = outputText;
+    outputDataElement.append(newUserDataListElement);
+  }
+}
+
+displayUserDataButtonElement.addEventListener("click", displayUserData);
